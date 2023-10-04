@@ -1,0 +1,54 @@
+
+.body {
+    font-family: 'Work Sans';
+}
+.banner-main {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    background-color: #F9F6E2;
+
+}
+.banner1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 80px;
+   
+}
+.title02 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+.sale {
+    color:black;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 30px;
+
+}
+.off {
+    color:#E527B2;
+}
+
+.btn-head {
+    margin-top: 10px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn2 {
+    background-color:hotpink;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+.banner-img {
+    width: 600px;
+    height: 500px;
+}
