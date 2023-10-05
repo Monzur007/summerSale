@@ -5,7 +5,7 @@
 .banner-main {
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 100px;
     background-color: #F9F6E2;
 
 }
@@ -40,7 +40,7 @@
 }
 
 .btn2 {
-    background-color:hotpink;
+    /* background-color:hotpink; */
     color: white;
     width: 90px;
     height: 40px;

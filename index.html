@@ -20,7 +20,7 @@
             <h1 class="sale">Purchase TK 200 or <br>above & get <span class="off">20% off</span></h1>
            <br>
             <div class="btn-head">
-            <p><strong>Use Promo Code</strong></p> <button class="btn2">Sell 200</button>
+            <p><strong>Use Promo Code</strong></p> <button class="btn2 btn btn-secondary">Sell 200</button>
         </div>
         </div>
     </div>
@@ -30,39 +30,38 @@
     </section>
 </header>
 <main>
-    <section class="mt-8 ml-40">
+    <section class="mt-8 ml-80">
         <div>
         <h3 class="font-bold text-4xl">Sportswear</h3>
     </div>
        
-    <div class="flex flex-row gap-8 ">
-
+   
+ <div class="flex flex-row gap-8 mt-8">
 <!-- first card -->
-<div> 
-    <div class="card w-64 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-        <img src="images/prod4.png" alt="Pen" class="rounded-xl" />
-        </figure>
-            <div class="card-body items-center text-center flex-row">
-            <img src="images/frame01.png" alt="">
-            <img src="images/frame01.png" alt="">
-            <img src="images/frame02.png" alt="">
-            <img src="images/frame02.png" alt="">
-            <img src="images/frame02.png" alt="">
-            </div>
-        <div>
-        <p class="text-center mb-6 font-bold">Sports Black Cap</p>
+<div class="mt-8 h-72"> 
+         <div class="card w-64 bg-base-100 shadow-xl">
+                <figure id="cap" onclick="myFunction()">
+                <img src="images/prod4.png" alt="Pen" class="rounded-xl" />
+                </figure>
+                    <div class="card-body items-center text-center flex-row">
+                    <img src="images/frame01.png" alt="">
+                    <img src="images/frame01.png" alt="">
+                    <img src="images/frame02.png" alt="">
+                    <img src="images/frame02.png" alt="">
+                    <img src="images/frame02.png" alt="">
+                    </div>
+                <div>
+                <p class="text-center mb-6 font-bold">Sports Black Cap</p>
+                </div>
+                <div>
+                    <p class="text-xl text-center">49.00<span class="text-xl"></span>Tk </p>
+                </div>
+            
         </div>
-        <div class="card-actions">
-            <input type="text" placeholder="Type here" class="input input-bordered input-gray input-sm w-1/2 max-w-xs ml-6 mb-6" />
-            <span class="text-xl">Tk</span>
-        </div>
-    
-  </div>
-        </div>
+ </div>
         <!-- second card -->
-        <div class="card w-64 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
+        <div class="card w-64 bg-base-100 shadow-xl h-80">
+            <figure id="jersey" onclick="myFunction2()">
               <img src="images/prod5.png" alt="Pen" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center flex-row">
@@ -73,18 +72,17 @@
               <img src="images/frame02.png" alt="">
             </div>
               <p class="text-center mb-6 font-bold">Full Jersey Set</p>
-              <div class="card-actions">
-                <input type="text" placeholder="Type here" class="input input-bordered input-gray input-sm w-1/2 max-w-xs ml-6 mb-6" />
-                <span class="text-xl">Tk</span>
+              <div>
+                <p class="text-xl text-center">69.00<span class="text-xl"></span>Tk </p>
               </div>
             
-          </div>
-                </div>
-            </div>
+       </div>  
+               
+           
 
             <!-- third card -->
-            <div class="card w-64 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
+            <div class="card w-64 bg-base-100 shadow-xl h-80">
+                <figure id="cates" onclick="myFunction3()">
                   <img src="images/prod6.png" alt="Pen" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center flex-row">
@@ -95,16 +93,118 @@
                   <img src="images/frame02.png" alt="">
                 </div>
                   <p class="text-center mb-6 font-bold">Sports Cates</p>
-                  <div class="card-actions">
-                    <input type="text" placeholder="Type here" class="input input-bordered input-gray input-sm  w-1/2 max-w-xs ml-6 mb-6" />
-                    <span class="text-xl">Tk</span>
+                  <div>
+                    <p class="text-xl text-center">159.00<span class="text-xl"></span>Tk </p>
                   </div>
                 
               </div>
-                    </div>
-                </div>
+              <!-- 4th div -->
+            <div class="card w-64 bg-base-100 shadow-xl">
+                
+                  <p class="text-center mb-6 font-bold">Have coupon?</p>
+                  <div class="card-actions2">
+                    <input id="input7" type="text" placeholder="Coupon code" class="input input-bordered input-gray input-sm w-1/2 max-w-xs ml-6 mb-6" />
+                    <button id="btn3" onclick="coupon ()" class="btn3 btn btn-secondary" disabled > Apply</button>
+                  </div> 
+                  <div id="items">
+                    <h4 class="text-center">Selected items</h4>
+                       
+                  <p id="pl1"></p>
+                  <p id="pl2"></p>
+                  <p id="pl3"></p>
+                  <p id="pl4"></p>
+                  <p id="pl5"></p>
+                  <p id="pl6"></p>
+                </div> 
+               <br> <hr>
+                <div>
+                    <p class="text-xl text-center">Total price:<span id="tp" class="text-xl"></span>Tk </p>
+            </div>
+            <div>
+                <p class="text-xl text-center">Discount:<span class="text-xl"></span>Tk </p>
+            </div>
+            <div>
+                <p class="text-xl text-center">Total :<span class="text-xl"></span>Tk </p>
+            </div>
+            <hr>
+            <button class=" btn4 btn btn-secondary">Make Purchase</button>
 
+           </div>     
+          
+
+                    
+ </div>
+      
+    </section>
+    <section>
+        <div class=" ml-80" mt-10>
+            <h3 class="font-bold text-4xl mt-8">Furniture</h3>
+        </div>
+        <div class="flex flex-row gap-8 mt-8  ml-80">
+            <!-- 5th card -->
+            <div class="mt-8 h-72"> 
+                     <div class="card w-64 bg-base-100 shadow-xl">
+                            <figure>
+                            <img src="images/prod7.png" alt="Pen" class="rounded-xl" />
+                            </figure>
+                                <div class="card-body items-center text-center flex-row">
+                                <img src="images/frame01.png" alt="">
+                                <img src="images/frame01.png" alt="">
+                                <img src="images/frame01.png" alt="">
+                                <img src="images/frame01.png" alt="">
+                                <img src="images/frame02.png" alt="">
+                                </div>
+                            <div>
+                            <p class="text-center mb-6 font-bold">Single Relax Chair</p>
+                            </div>
+                            <div>
+                                <p class="text-xl text-center">185.00<span class="text-xl"></span>Tk </p>
+                            </div>
+                        
+                    </div>
+             </div>
+                    <!-- 6th card -->
+                    <div class="card w-64 bg-base-100 shadow-xl h-80">
+                        <figure >
+                          <img src="images/prod8.png" alt="Pen" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center flex-row">
+                          <img src="images/frame01.png" alt="">
+                          <img src="images/frame01.png" alt="">
+                          <img src="images/frame01.png" alt="">
+                          <img src="images/frame01.png" alt="">
+                          <img src="images/frame01.png" alt="">
+                        </div>
+                          <p class="text-center mb-6 font-bold">Children Play Chair</p>
+                          <div>
+                            <p class="text-xl text-center">299.00<span class="text-xl"></span>Tk </p>
+                          </div>
+                        
+                   </div>  
+                           
+                       
+                        <!-- 7th card -->
+                        <div class="card w-64 bg-base-100 shadow-xl h-80">
+                            <figure>
+                              <img src="images/prod9.png" alt="Pen" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center flex-row">
+                              <img src="images/frame01.png" alt="">
+                              <img src="images/frame01.png" alt="">
+                              <img src="images/frame01.png" alt="">
+                              <img src="images/frame01.png" alt="">
+                              <img src="images/frame01.png" alt="">
+                            </div>
+                              <p class="text-center mb-6 font-bold">Flexible Sofa</p>
+                              <div class="card-actions">
+                                <p class="text-xl text-center">339.00<span class="text-xl"></span>Tk </p>
+                              </div>
+                            
+                          </div>
     </section>
 </main>
+
+
+<script src="calculation.js"></script>
 </body>
 </html>
