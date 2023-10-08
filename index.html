@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-    <section class="banner-main">
+    <section class="banner-main flex flex-col lg:flex-row">
         <div class="banner1">
         <div>
             <h2 class="title02">---SALE FEVER---</h2>
@@ -36,7 +36,7 @@
     </div>
        
    
- <div class="flex flex-row gap-8 mt-8">
+ <div class="flex flex-col lg:flex-row gap-8 mt-8">
 <!-- first card -->
 <div class="mt-8 h-72"> 
          <div class="card w-64 bg-base-100 shadow-xl">
@@ -54,7 +54,7 @@
                 <p class="text-center mb-6 font-bold">Sports Black Cap</p>
                 </div>
                 <div>
-                    <p class="text-xl text-center">49.00<span class="text-xl"></span>Tk </p>
+                    <p class="text-xl text-center"><span id="taka" class="text-xl">49.00</span>Tk </p>
                 </div>
             
         </div>
@@ -73,7 +73,7 @@
             </div>
               <p class="text-center mb-6 font-bold">Full Jersey Set</p>
               <div>
-                <p class="text-xl text-center">69.00<span class="text-xl"></span>Tk </p>
+                <p class="text-xl text-center"><span id="taka2" class="text-xl">69.00</span>Tk </p>
               </div>
             
        </div>  
@@ -94,7 +94,7 @@
                 </div>
                   <p class="text-center mb-6 font-bold">Sports Cates</p>
                   <div>
-                    <p class="text-xl text-center">159.00<span class="text-xl"></span>Tk </p>
+                    <p class="text-xl text-center"><span id="taka3" class="text-xl">159.00</span>Tk </p>
                   </div>
                 
               </div>
@@ -104,7 +104,7 @@
                   <p class="text-center mb-6 font-bold">Have coupon?</p>
                   <div class="card-actions2">
                     <input id="input7" type="text" placeholder="Coupon code" class="input input-bordered input-gray input-sm w-1/2 max-w-xs ml-6 mb-6" />
-                    <button id="btn3" onclick="coupon ()" class="btn3 btn btn-secondary" disabled > Apply</button>
+                    <button id="btn3" onclick="coupon ()" class="btn3 btn btn-secondary"  > Apply</button>
                   </div> 
                   <div id="items">
                     <h4 class="text-center">Selected items</h4>
@@ -118,16 +118,30 @@
                 </div> 
                <br> <hr>
                 <div>
-                    <p class="text-xl text-center">Total price:<span id="tp" class="text-xl"></span>Tk </p>
+                    <p class="text-xl text-center">Total price:<span id="tp" class="text-xl">00.00</span>Tk </p>
             </div>
             <div>
-                <p class="text-xl text-center">Discount:<span class="text-xl"></span>Tk </p>
+                <p class="text-xl text-center">Discount:<span id="discount" class="text-xl">00.00</span>Tk </p>
             </div>
             <div>
                 <p class="text-xl text-center">Total :<span class="text-xl"></span>Tk </p>
             </div>
             <hr>
-            <button class=" btn4 btn btn-secondary">Make Purchase</button>
+            <!-- <button id="purchase" class=" btn4 btn btn-secondary" >Make Purchase</button> -->
+            <button class="btn btn btn-secondary" onclick="my_modal_1.showModal()">Make Purchase</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box  grid justify-items-center">
+    <h3 class="font-bold text-lg"><img src="images/congo.png" alt=""></h3>
+    <h3 class="py-4 font-bold">Congratulation</h3>
+    <p class="py-4">Your purchase the product</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class=" btn btn btn-secondary">Go Home</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
            </div>     
           
@@ -140,13 +154,13 @@
         <div class=" ml-80" mt-10>
             <h3 class="font-bold text-4xl mt-8">Furniture</h3>
         </div>
-        <div class="flex flex-row gap-8 mt-8  ml-80">
+        <div class="flex flex-col lg:flex-row gap-8 mt-8  ml-80">
             <!-- 5th card -->
             <div class="mt-8 h-72"> 
                      <div class="card w-64 bg-base-100 shadow-xl">
-                            <figure>
-                            <img src="images/prod7.png" alt="Pen" class="rounded-xl" />
-                            </figure>
+                      <figure id="cates" onclick="myFunction4()">
+                        <img src="images/prod7.png" alt="Pen" class="rounded-xl" />
+                      </figure>
                                 <div class="card-body items-center text-center flex-row">
                                 <img src="images/frame01.png" alt="">
                                 <img src="images/frame01.png" alt="">
@@ -158,16 +172,16 @@
                             <p class="text-center mb-6 font-bold">Single Relax Chair</p>
                             </div>
                             <div>
-                                <p class="text-xl text-center">185.00<span class="text-xl"></span>Tk </p>
+                                <p class="text-xl text-center"><span id="taka4" class="text-xl">185.00</span>Tk </p>
                             </div>
                         
                     </div>
              </div>
                     <!-- 6th card -->
                     <div class="card w-64 bg-base-100 shadow-xl h-80">
-                        <figure >
-                          <img src="images/prod8.png" alt="Pen" class="rounded-xl" />
-                        </figure>
+                      <figure id="cates" onclick="myFunction5()">
+                        <img src="images/prod8.png" alt="Pen" class="rounded-xl" />
+                      </figure>
                         <div class="card-body items-center text-center flex-row">
                           <img src="images/frame01.png" alt="">
                           <img src="images/frame01.png" alt="">
@@ -177,7 +191,7 @@
                         </div>
                           <p class="text-center mb-6 font-bold">Children Play Chair</p>
                           <div>
-                            <p class="text-xl text-center">299.00<span class="text-xl"></span>Tk </p>
+                            <p class="text-xl text-center"><span id="taka5" class="text-xl">299.00</span>Tk </p>
                           </div>
                         
                    </div>  
@@ -185,7 +199,7 @@
                        
                         <!-- 7th card -->
                         <div class="card w-64 bg-base-100 shadow-xl h-80">
-                            <figure>
+                            <figure id="sofa" onclick="myFunction6()">
                               <img src="images/prod9.png" alt="Pen" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center flex-row">
@@ -197,7 +211,7 @@
                             </div>
                               <p class="text-center mb-6 font-bold">Flexible Sofa</p>
                               <div class="card-actions">
-                                <p class="text-xl text-center">339.00<span class="text-xl"></span>Tk </p>
+                                <p class="text-xl text-center"><span id="taka6" class="text-xl">339.00</span>Tk </p>
                               </div>
                             
                           </div>
